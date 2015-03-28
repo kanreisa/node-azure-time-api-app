@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/schemas/2014-11-01/apiapp.json#",
+  "id": "Time",
+  "namespace": "",
+  "gateway": "2015-01-14",
+  "links": [],
+  "endpoints": {
+    "apiDefinition": "/swagger/docs/v1",
+    "status": null
+  }
+}

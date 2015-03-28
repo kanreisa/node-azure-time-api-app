@@ -1,0 +1,65 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Time",
+    "description": "This is Time provider.",
+    "contact": {
+      "name": "kanreisa",
+      "url": "https://github.com/kanreisa"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://github.com/kanreisa/node-azure-time-api-app"
+    }
+  },
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/time": {
+      "get": {
+        "summary": "Time",
+        "description": "Just returns current time.",
+        "operationId": "Time",
+        "consumes": [ ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "dummy",
+            "in": "query",
+            "x-ms-summary": "This just returns current time.",
+            "required": false,
+            "type": "string",
+            "default": "this is dummy input."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Time"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "Time": {
+      "required": [
+        "time"
+      ],
+      "type": "object",
+      "properties": {
+        "time": {
+          "type": "string",
+          "x-ms-summary": "Unixtime (ms)"
+        }
+      }
+    }
+  }
+}

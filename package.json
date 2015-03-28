@@ -1,0 +1,15 @@
+{
+  "name": "TimeApiApp",
+  "version": "0.0.0",
+  "description": "TimeApiApp",
+  "main": "server.js",
+  "author": {
+    "name": "kanreisa",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "morgan": "^1.5.2",
+    "swaggerize-express": "^3.0.3"
+  }
+}

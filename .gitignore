@@ -1,0 +1,6 @@
+/bin
+/node_modules
+/obj
+/*.pubxml
+/*.user
+/*.dat
